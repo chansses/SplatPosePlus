@@ -1,0 +1,1 @@
+Namespace(sh_degree=3, source_path='/ceph_data/chanse0727/repos/SplatPosePlus/MAD-Sim/07Owl', model_path='results/07Owl', images='images', resolution=-1, white_background=True, data_device='cuda', eval=False)

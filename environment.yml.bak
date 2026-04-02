@@ -1,23 +1,24 @@
 name: splatposeplus
 channels:
   - pytorch
-  - nvidia
   - conda-forge
   - defaults
 dependencies:
+  - cudatoolkit-dev
+  - plyfile
   - python=3.11
   - pip
   - tqdm
-  - plyfile
   - glm
-  - matplotlib
-  - pillow
-  - scipy
-  - pytorch=2.1.*
-  - torchvision
+  - pytorch
   - torchaudio
-  - pytorch-cuda=12.1
+  - torchvision
+  - matplotlib
+  - Pillow
+  - scipy
   - pip:
+    - submodules/diff-gaussian-rasterization
+    - submodules/simple-knn
     - opencv-python
     - easydict
     - einops
