@@ -20,7 +20,7 @@ The core idea:
 
 ## Key Contributions
 
-### Chanse's Approach — Anomal 3DGS Re-training
+### 찬세의 Approach — Anomal 3DGS Re-training
 실제 이상 이미지로 3DGS를 재학습하여 이상 Gaussian 파라미터를 추출
 
 ```
