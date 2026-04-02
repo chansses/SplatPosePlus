@@ -43,7 +43,10 @@ pre_parser.add_argument("-feature_ext", type=str, default='superpoint', help="fe
 
 lego_args = pre_parser.parse_args()
 data_path = os.path.join(lego_args.data_path, lego_args.c)
-result_dir = os.path.join(f"results", lego_args.c)
+if lego_args.seed == 0:
+    result_dir = os.path.join(f"results", lego_args.c)
+else:
+    result_dir = os.path.join(f"results", f"{lego_args.c}_seed{lego_args.seed}")
 print("saving model to: ", result_dir)
 os.makedirs(result_dir, exist_ok=True)
 start = torch.cuda.Event(enable_timing=True)

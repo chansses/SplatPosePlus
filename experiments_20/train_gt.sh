@@ -16,7 +16,7 @@ CATEGORY_GROUPS[2]="06Bird 07Owl 08Sabertooth 09Swan 10Sheep"
 CATEGORY_GROUPS[3]="11Pig 12Zalika 13Pheonix 14Elephant 15Parrot"
 CATEGORY_GROUPS[4]="16Cat 17Scorpion 18Obesobeso 19Bear 20Puppy"
 
-SEEDS=(1 2 3)   # seed 0은 이미 완료
+SEEDS=(0 1 2 3)   # seed 0은 이미 완료
 
 PROJECT_ROOT=/ceph_data/chanse0727/repos/SplatPosePlus
 LOGDIR="${PROJECT_ROOT}/experiments_20/logs"
@@ -38,7 +38,7 @@ for CATEGORY in ${CATEGORY_GROUPS[$GROUP]}; do
         echo "START    : $(date)"
         echo "========================================="
 
-        python train_render_eval.py \
+        python train_render_eval1.py \
             -c "${CATEGORY}" \
             -seed "${SEED}" \
             -skip_loc \
